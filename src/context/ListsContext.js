@@ -7,9 +7,7 @@ export const ListsContext = createContext();
 
 export const ListsContextProvider = ({ children }) => {
   const [loading, error, data] = useDataFetching(
-    `https://my-json-server.typicode.com/
-     PacktPublishing/React-Projects-Second-Edition/
-     lists`,
+    `https://my-json-server.typicode.com/PacktPublishing/React-Projects-Second-Edition/lists`,
   );
   
   return (
